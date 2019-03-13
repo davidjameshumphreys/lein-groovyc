@@ -5,7 +5,8 @@ Compile groovy source files
 ## Usage
 
    Add the following to your project.clj
-   :dev-dependencies [[lein-groovyc "0.1.0"]]
+   ```
+   :dev-dependencies [[org.clojars.djh/lein-groovyc "0.4.0"]]
    :groovyc-source-path "src/groovy"
 
    ;;Multiple paths can be specified using paths instead
@@ -13,7 +14,7 @@ Compile groovy source files
 
    ;; or more generally in groovyc-options
    :groovyc-options {:includeJavaRuntime true}
-
+   ```
 
    Run groovyc
    lein clean, groovyc
